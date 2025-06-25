@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/16" 
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.PenggunaViewController"
+      style="-fx-padding: 20;">
+    
+    <Label text="Form Data Pengguna" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    
+    <GridPane hgap="10" vgap="10">
+        <Label text="Nama Lengkap:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="txtNama" GridPane.columnIndex="1" GridPane.rowIndex="0" 
+                   promptText="Masukkan Nama Lengkap"/>
+        
+        <Label text="NIM:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="txtNim" GridPane.columnIndex="1" GridPane.rowIndex="1" 
+                   promptText="Masukkan NIM"/>
+        
+        <Label text="No. HP:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="txtNoHp" GridPane.columnIndex="1" GridPane.rowIndex="2" 
+                   promptText="Masukkan No. HP"/>
+        
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" 
+                   promptText="Masukkan Email"/>
+        
+        <Label text="Jenis Kelamin:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <RadioButton fx:id="rbLaki" text="Laki-laki" userData="Laki-laki" selected="true" />
+            <RadioButton fx:id="rbPerempuan" text="Perempuan" userData="Perempuan" />
+        </HBox>
+        
+        <Button text="Simpan" onAction="#handleSimpan" 
+                GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    </GridPane>
+    
+    <Label text="Daftar Pengguna" style="-fx-font-weight: bold; -fx-padding: 10 0 5 0;"/>
+    
+    <TableView fx:id="tblPengguna" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn text="Nama" fx:id="colNama" />
+            <TableColumn text="NIM" fx:id="colNim" />
+            <TableColumn text="No. HP" fx:id="colNoHp" />
+            <TableColumn text="Email" fx:id="colEmail" />
+            <TableColumn text="Jenis Kelamin" fx:id="colJenisKelamin" />
+        </columns>
+    </TableView>
+    
+    <Label fx:id="lblStatus" style="-fx-text-fill: red; -fx-padding: 5 0 0 0;"/>
+</VBox>
