@@ -6,6 +6,28 @@
 
 Sistem manajemen proyek berbasis Java dengan fitur autentikasi pengguna, manajemen file, dan manajemen data yang komprehensif.
 
+## 📸 Tampilan Aplikasi
+
+Berikut adalah beberapa tangkapan layar dari aplikasi:
+
+### 1. Halaman Login
+![Halaman Login](screenshots/login.png)
+*Tampilan halaman login untuk mengakses sistem*
+
+### 2. Beranda
+![Beranda](screenshots/beranda.png)
+*Tampilan dashboard utama setelah login*
+
+### 3. Manajemen Data Pengguna
+![Data Pengguna](screenshots/data-pengguna.png)
+*Halaman untuk mengelola data pengguna sistem*
+
+### 4. Manajemen Mata Kuliah
+![Mata Kuliah](screenshots/mata-kuliah.png)
+*Halaman untuk mengelola data mata kuliah*
+
+> 💡 Pastikan untuk menambahkan file-file screenshot di atas ke dalam folder `screenshots/`.
+
 ## ✨ Fitur Utama
 
 - 🔐 **Sistem Autentikasi Aman**
